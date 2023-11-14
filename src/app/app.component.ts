@@ -37,10 +37,6 @@ export class AppComponent implements OnInit {
     });
   }
 
-  public get sortedList(): DropDownListModel[] {
-    return this.dropdownValues.sort((a, b) => b.id - a.id);
-  }
-
   dropDrownList: DropDownListModel[] = [];
 
   getDropDownValues(list: DropDownListModel[], type: number = 0) {
